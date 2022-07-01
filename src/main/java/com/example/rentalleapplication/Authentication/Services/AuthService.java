@@ -75,8 +75,8 @@ public class AuthService implements IauthService {
                         loginDbData.getFullName(),
                         null,
                         loginDbData.getMobileNo(),
-                        null,
-                        null,
+                        loginDbData.getIs_customer(),
+                        loginDbData.getIs_seller(),
                         loginDbData.getAddress(),
                         null
                 )

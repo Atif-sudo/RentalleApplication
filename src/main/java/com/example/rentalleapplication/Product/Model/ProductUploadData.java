@@ -24,8 +24,8 @@ public class ProductUploadData {
         @JsonProperty("TotalProduct")
         private int TotalProduct;
 
-//        @JsonProperty("PhotoUpload")
-//        private String PhotoUpload;
+        @JsonProperty("PhotoUpload")
+        private String PhotoUpload;
 
         @JsonProperty("PricePerMonth")
         private int PricePerMonth;

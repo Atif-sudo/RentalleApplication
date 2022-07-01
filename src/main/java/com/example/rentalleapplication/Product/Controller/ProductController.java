@@ -4,6 +4,7 @@ package com.example.rentalleapplication.Product.Controller;
 
 import com.example.rentalleapplication.Exception.CustomException;
 import com.example.rentalleapplication.Product.Model.GetProductDataRequest;
+import com.example.rentalleapplication.Product.Model.GetRentedProducts;
 import com.example.rentalleapplication.Product.Model.ProductUploadData;
 import com.example.rentalleapplication.Product.Service.IProductServ;
 import com.example.rentalleapplication.Response.ApiResponse;
@@ -30,6 +31,13 @@ public class ProductController {
         ApiResponse<?> apiResponse = iProductServ.getProducts(getProductDataRequest);
         return new ResponseEntity<>(apiResponse,apiResponse.getStatus());
     }
+
+    @PostMapping("/Rentalle/v1/product/getRentedProducts")
+    public ResponseEntity<ApiResponse<?>> getRentedProducts(@RequestBody GetRentedProducts getRentedProducts) {
+        ApiResponse<?> apiResponse = iProductServ.getRentedProducts(getRentedProducts);
+        return new ResponseEntity<>(apiResponse,apiResponse.getStatus());
+    }
+
 
 
 

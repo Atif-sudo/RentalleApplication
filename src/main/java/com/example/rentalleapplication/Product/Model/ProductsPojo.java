@@ -15,13 +15,15 @@ public class ProductsPojo {
 
     private int CategoryID;
 
-    private int SubCategoryID;
+    private Integer SubCategoryID;
 
     private String SubCategoryName;
 
     private String ProductName;
 
     private String ProductDescription;
+
+    private String PhotoUpload;
 
     private int PricePerMonth;
 
